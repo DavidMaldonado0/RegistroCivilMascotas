@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 /* Global Styles */
 :root {
-  --primary-color: #55705a;
-  --dark-color: #2b2119;
+  --primary-color: #18a4e0;
+  --dark-color: #000;
   --light-color: #faf8ed;
   --danger-color: #dc3545;
   --success-color: #28a745;
@@ -16,7 +19,10 @@
 }
 
 body {
-  font-family: 'Sen', sans-serif;
+  /*font-family: 'Sen', sans-serif;*/
+  /*font-family: 'Rubik', sans-serif;*/
+  /*font-family: 'Fira Sans', sans-serif;*/
+  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -347,7 +353,7 @@ button {
 /* Footer */
 
 .site-footer {
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
@@ -404,7 +410,7 @@ button {
   margin-left: 6px;
   margin-right: 0;
   border-radius: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
 }
 .copyright-text {
   margin: 0;
