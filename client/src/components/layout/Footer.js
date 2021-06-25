@@ -6,31 +6,29 @@ const Footer = () => {
       <div className='container'>
         <div className='row'>
           <div className='col-sm-12 col-md-6'>
-            <h6 className='text-center my-2'>Acerca de Nosotros</h6>
+            <h2 className='text-center my-2'>Acerca de Nosotros</h2>
             <p className='text-center'>
-              Industia Veterinaria, Registro de Mascotas.
+              Registro Civil de Mascotas, Honduras y Centro América.
             </p>
             <p className='text-center'>
-              Edificio Alvarenga, Blvd. Morazán, Tegucigalpa, Fco. Morazán,
-              Honduras.
+              Honduras, Francisco Morazán, Tegucigalpa
             </p>
-            <p className='text-center'>info@induvet.com +(504) 2236-5531</p>
+            <p className='text-center'>info@registrocivilmascotas.com</p>
           </div>
         </div>
-        <hr />
       </div>
       <div className='container'>
         <div className='row'>
           <div className='col-md-8 col-sm-6 col-xs-12'>
             <p className='copyright-text'>
-              Industria Veterinaria S. de R.L. de C.V. &copy; 2020 Todos los
+              Registro Civil de Mascotas &copy; 2021 Todos los
               derechos reservados {''}
               <a
-                href='https://www.induvet.com/'
+                href='https://www.registrocivilmascotas.com/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                INDUVET
+                Información
               </a>
               .
             </p>
@@ -40,7 +38,7 @@ const Footer = () => {
             <ul className='social-icons'>
               <li>
                 <a
-                  href='https://es-la.facebook.com/InduvetHonduras/'
+                  href='https://es-la.facebook.com/'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='facebook'
@@ -50,7 +48,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href='https://www.instagram.com/induvethn'
+                  href='https://www.instagram.com/'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='twitter'
@@ -60,7 +58,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href='https://www.instagram.com/induvethn'
+                  href='https://www.instagram.com/'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='instagram'

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import Information from './Information';
 
 const Landing = ({ isAuthenticated }) => {
   if (isAuthenticated) {
@@ -9,11 +10,12 @@ const Landing = ({ isAuthenticated }) => {
   }
 
   return (
+    <div>
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
-          <h1 className='x-large'>Registro de Mascotas</h1>
-          <p className='lead'>
+          <h1 data-aos="fade-down" data-aos-duration="1000" className='x-large'>Registro Civil de Mascotas</h1>
+          <p data-aos="fade-down" data-aos-duration="1000" className='lead'>
             Crea un perfil para tu mascota y registralo con el ID de su
             Microchip
           </p>
@@ -28,6 +30,8 @@ const Landing = ({ isAuthenticated }) => {
         </div>
       </div>
     </section>
+    <Information/>
+    </div>
   );
 };
 
