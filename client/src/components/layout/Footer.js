@@ -21,7 +21,7 @@ const Footer = () => {
         <div className='row'>
           <div className='col-md-8 col-sm-6 col-xs-12'>
             <p className='copyright-text'>
-              Registro Civil de Mascotas &copy; 2021 Todos los
+              Registro Civil de Mascotas &copy; 2022 Todos los
               derechos reservados {''}
               <a
                 href='https://www.registrocivilmascotas.com/'
