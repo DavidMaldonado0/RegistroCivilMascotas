@@ -39,7 +39,7 @@ const CreateProfile = ({ createProfile, history }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary text-center'>
+      <h1 className='large text-primary text-center my-3'>
         Crea el perfil de tu Mascota
       </h1>
       <p className='lead text-center'>

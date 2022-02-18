@@ -43,6 +43,11 @@ img {
 }
 
 /* Utilities */
+
+h1 {
+  margin-top: 20px;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
@@ -318,6 +323,11 @@ button {
 }
 
 /* Navbar */
+
+nav {
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.3);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;

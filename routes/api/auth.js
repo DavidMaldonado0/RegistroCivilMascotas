@@ -29,7 +29,7 @@ router.get('/', auth, async (req, res) => {
 router.post(
   '/',
   [
-    check('idnumber', 'Por favor ingresa un id valido')
+    check('idnumber', 'Por favor ingresa un ID valido')
       .isNumeric()
       .isLength({ min: 11, max: 11 }),
     check('password', 'Contraseña Requerida').exists()
@@ -50,7 +50,7 @@ router.post(
       if (!user) {
         return res
           .status(400)
-          .json({ errors: [{ msg: 'Credenciales invalidas' }] });
+          .json({ errors: [{ msg: 'Credenciales inválidas' }] });
       }
 
       const isMatch = await bcrypt.compare(password, user.password);
@@ -58,7 +58,7 @@ router.post(
       if (!isMatch) {
         return res
           .status(400)
-          .json({ errors: [{ msg: 'Credenciales invalidas' }] });
+          .json({ errors: [{ msg: 'Credenciales inválidas' }] });
       }
 
       const payload = {
@@ -78,7 +78,7 @@ router.post(
       );
     } catch (err) {
       console.error(err.message);
-      res.status(500).send('Server Error');
+      res.status(500).send('Server Error / Error de Servidor');
     }
   }
 );

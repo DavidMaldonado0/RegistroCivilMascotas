@@ -28,7 +28,7 @@ const Dashboard = ({
       ) : (
         <Fragment>
           <p className='text-center my-2'>
-            Tu mascota no tiene un perfil entero, por favor agrega su
+            Tu mascota no tiene un perfil completo, por favor agrega su
             información
           </p>
           <div className='buttons text-center'>

@@ -7,6 +7,9 @@ const DashboardActions = () => {
       <Link to='/edit-profile' className='btn btn-light'>
         Editar Perfil
       </Link>
+      <Link to='/add-information' className='btn btn-light'>
+        Añadir Información
+      </Link>
     </div>
   );
 };

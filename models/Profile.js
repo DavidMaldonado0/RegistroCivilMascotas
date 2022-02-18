@@ -33,6 +33,12 @@ const ProfileSchema = new mongoose.Schema({
       location: {
         type: String
       },
+      diseases: {
+        type: String
+      },
+      veterinary: {
+        type: String
+      },
       current: {
         type: Boolean,
         default: false
