@@ -20,14 +20,14 @@ const AddInformation = ({ addInformation, history }) => {
   return <Fragment>
     <h1 className="large text-primary">Añade Información Sobre tu Mascota</h1>
       <p className="lead">
-        <i className="fas fa-code-branch" /> Agrega información para localizar e identificar a tu mascota
+        <i className="fas fa-paw" /> Agrega información para localizar e identificar a tu mascota
       </p>
       <small>* = campo requerido</small>
       <form
         className="form"
         onSubmit={(e) => {
           e.preventDefault();
-          addInformation(formData, navigate);
+          addInformation(formData, history);
         }}
       >
         <div className="form-group">
@@ -45,7 +45,7 @@ const AddInformation = ({ addInformation, history }) => {
             type="text"
             placeholder="* Dirección"
             name="location"
-            value={company}
+            value={location}
             onChange={onChange}
             required
           />
@@ -54,15 +54,6 @@ const AddInformation = ({ addInformation, history }) => {
           <input
             type="text"
             placeholder="¿Tiene alguna enfermedad?"
-            name="diseases"
-            value={location}
-            onChange={onChange}
-          />
-        </div>
-        <div className="form-group">
-          <input
-            type="text"
-            placeholder="Veterinario que lo "
             name="diseases"
             value={diseases}
             onChange={onChange}
