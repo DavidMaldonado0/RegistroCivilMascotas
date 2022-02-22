@@ -3,10 +3,11 @@ import { setAlert } from './alert';
 
 import {
   GET_PROFILE,
+  GET_PROFILES,
   PROFILE_ERROR,
   UPDATE_PROFILE,
   CLEAR_PROFILE,
-  GET_PROFILES
+  ACCOUNT_DELETED
 } from './types';
 
 //Perfil del usuario
@@ -135,5 +136,26 @@ export const addInformation = (formData, history) => async dispatch => {
       type: PROFILE_ERROR,
       payload: { msg: err.response.statusText, status: err.response.status }
     });
+  }
+};
+
+
+//Borrar perfil
+
+export const deleteAccount = () => async (dispatch) => {
+  if (window.confirm('¿Estás Seguro?, No podrás recuperar el perfil si lo eliminas')) {
+    try {
+      const res = await axios.delete('api/profile');
+
+      dispatch({ type: CLEAR_PROFILE });
+      dispatch({ type: ACCOUNT_DELETED });
+
+      dispatch(setAlert('El perfil de tu mascota fue eliminado de forma permanente'));
+    } catch (err) {
+      dispatch({
+        type: PROFILE_ERROR,
+        payload: { msg: err.response.statusText, status: err.response.status }
+      });
+    }
   }
 };

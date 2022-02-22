@@ -11,22 +11,16 @@ const Profiles = ({ getProfiles, profile: { profiles } }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary text-center'>Mascotas</h1>
-      <p className='lead text-center'>Descubre Mascotas en tu comunidad</p>
-      <div className='profiles'>
-        Display de Perfiles de Mascotas
-        <p>Mostrar mascotas con microship</p>
-        <p>Connect al backend server de Express</p>
-        <p>Get de Profiles de MongoDB</p>
-        <p>Inicio de Sesion aleatorio en el cloud ip del server</p>
-        <p>Cierre de Sesion en momento del auth-server</p>
-        {profiles.length > 0 ? (
-          profiles.map((profile) => (
-            <ProfileItem key={profile._id} profile={profile} />
-          ))
-        ) : (
-          <h4>No se encontraron mascotas</h4>
-        )}
+      <h1 className="large text-primary text-center">Mascotas</h1>
+      <p className="lead">
+        <i className="fab fa-dog"></i> Encuentra a tu mascota con el id de su microship
+      </p>
+      <div className="profiles">
+          {profiles.length > 0 ? (
+            profiles.map(profile => (
+              <ProfileItem key={profile._id} profile={profile} />
+              ))
+          ) : <h4> No hay similitudes en tu busqueda </h4>}
       </div>
     </Fragment>
   );
