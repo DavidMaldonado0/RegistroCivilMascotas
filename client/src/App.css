@@ -769,3 +769,47 @@ nav {
 .button {
   margin: 5%;
 }
+
+/**/
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.product {
+  background: white;
+  width: 850px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding-bottom: 0px;
+  margin: 10px;
+  transition-duration: 1s;
+}
+
+.product:hover {
+  transform: scale(1.1);
+}
+.product-title {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0px;
+}
+.price {
+  font-size: 30pt;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0px 5px 0px;
+}
+.product-descr {
+  text-align: justify;
+  padding: 1.2em;
+}
+.product-descr p {
+  margin: 13px 0px;
+}
+.color1 {
+  border-bottom: 4px solid #4682b4;
+}
