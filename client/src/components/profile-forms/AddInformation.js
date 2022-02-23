@@ -80,4 +80,4 @@ AddInformation.propTypes = {
   addInformation: PropTypes.func.isRequired
 };
 
-export default connect(null, { addInformation })(AddInformation);
+export default connect(null, { addInformation })(withRouter(AddInformation));

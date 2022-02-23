@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 /* Global Styles */
 :root {
@@ -19,10 +16,7 @@
 }
 
 body {
-  /*font-family: 'Sen', sans-serif;*/
-  /*font-family: 'Rubik', sans-serif;*/
-  font-family: 'Fira Sans', sans-serif;
-  /*font-family: 'Work Sans', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -367,7 +361,18 @@ nav {
 /* Footer */
 
 .site-footer {
-  background-color: var(--dark-color);
+  background: #085078; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #85d8ce,
+    #085078
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #85d8ce,
+    #085078
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
