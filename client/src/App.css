@@ -813,3 +813,28 @@ nav {
 .color1 {
   border-bottom: 4px solid #4682b4;
 }
+
+.howitworks {
+  display: flex;
+  justify-content: center;
+}
+
+.works {
+  margin-top: 70px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .works {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .works {
+    width: 400px;
+  }
+}

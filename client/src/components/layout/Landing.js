@@ -3,6 +3,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Information from './Information';
+import HowItWorks from './HowItWorks';
 import Cards from './Cards';
 
 const Landing = ({ isAuthenticated }) => {
@@ -33,6 +34,7 @@ const Landing = ({ isAuthenticated }) => {
     </section>
     <Information/>
     <Cards/>
+    <HowItWorks/>
     </div>
   );
 };
